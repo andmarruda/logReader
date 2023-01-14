@@ -1,3 +1,4 @@
 from src.reader import reader
 
-reader('./postgresql/postgresql-main.log').toList()
+list = reader('../test/postgresql/postgresql-main.log').toList()
+print(list)
