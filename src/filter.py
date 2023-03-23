@@ -24,6 +24,7 @@ class filter:
             if(self.exec(lines)):
                 self._filtered.append(lines)
                 self._limited += 1
+        self._reader.close()
 
     def exec(self, line):
         return self._regex.search(line)
